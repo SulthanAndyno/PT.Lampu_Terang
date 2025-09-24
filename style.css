@@ -1,0 +1,215 @@
+
+/* Warna utama */
+:root {
+  --black: #000000;
+  --blue: #5682B1;
+  --blue-light: #739EC9;
+  --cream: #FFE8DB;
+  --white: #ffffff;
+}
+
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--black);
+  color: var(--white);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--blue-light);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--white);
+}
+
+/* Hero */
+.hero {
+  background: var(--blue);
+  color: var(--white);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background: var(--cream);
+  color: var(--black);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--blue-light);
+  color: var(--white);
+}
+
+/* Section umum */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Services */
+.bg-secondary {
+  background: var(--blue-light);
+  color: var(--white);
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: var(--black);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Founders */
+.founders {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.founder-card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.founder-card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.bg-primary {
+  background: var(--blue);
+}
+
+.text-light {
+  color: var(--white);
+}
+
+.btn-secondary {
+  background: var(--cream);
+  color: var(--black);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+/* Footer */
+.footer {
+  background: var(--black);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--black);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
