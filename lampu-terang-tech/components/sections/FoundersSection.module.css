@@ -1,0 +1,40 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--primary-mid);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.imgContainer {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.img {
+    object-fit: cover;
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: var(--accent);
+    font-weight: 500;
+}
