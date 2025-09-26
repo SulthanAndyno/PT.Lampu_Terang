@@ -1,0 +1,67 @@
+/* Warna utama dari ColorHunt: https://colorhunt.co/palette/1b3c53234c6a456882d2c1b6 */
+:root {
+  --primary-dark: #1B3C53;
+  --primary-mid: #234C6A;
+  --primary-light: #456882;
+  --accent: #D2C1B6;
+  --white: #ffffff;
+  --text-light: #e0e0e0;
+}
+
+/* Reset sederhana & Font Modern */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--primary-dark);
+  color: var(--text-light);
+  line-height: 1.7;
+  overflow-x: hidden; /* Mencegah horizontal scroll */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
