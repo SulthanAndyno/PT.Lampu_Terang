@@ -9,7 +9,7 @@ const ContactSection = () => {
           Punya ide brilian? Mari wujudkan bersama.
         </p>
         <div>
-            <a href="mailto:info@lamputerang.tech" className={styles.emailButton}>
+            <a href="mailto:mail@lamputerang.cloud" className={styles.emailButton}>
                 Email Kami Sekarang
             </a>
         </div>

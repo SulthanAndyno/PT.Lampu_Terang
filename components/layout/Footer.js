@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className={styles.footerColumn}>
           <h4>Hubungi Kami</h4>
-          <p>Email: info@lamputerang.tech</p>
+          <p>Email: mail@lamputerang.cloud</p>
           <p>Telepon: (021) 123-4567</p>
         </div>
         <div className={styles.footerColumn}>

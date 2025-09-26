@@ -6,6 +6,7 @@ const founders = [
     { name: 'Founder 2', role: 'CTO', img: 'https://via.placeholder.com/250' },
     { name: 'Founder 3', role: 'COO', img: 'https://via.placeholder.com/250' },
     { name: 'Founder 4', role: 'CMO', img: 'https://via.placeholder.com/250' },
+    { name: 'Founder 5', role: 'CMO', img: 'https://via.placeholder.com/250' },
 ];
 
 const FoundersSection = () => {
